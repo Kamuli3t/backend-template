@@ -4,9 +4,10 @@ import helmet from "helmet";
 import dotenv from "dotenv";
 import cors from "cors";
 import healthRouter from "./routes/health.js";
+import mongoose from "mongoose";
 
 dotenv.config();
-console.log(process.env.MONGODB_URI);
+// console.log(process.env.MONGODB_URI);
 
 const PORT = process.env.PORT || 4000;
 
