@@ -37,7 +37,7 @@ dotenv.config();
 //console.log(process.env.MONGODB_URI);
 
 //CONNECT TO MongoDB
-await mongoose
+mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => console.log("Connected to MongoDB"))
   .catch((e) => console.error(e));
